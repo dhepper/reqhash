@@ -1,6 +1,6 @@
 # a comment
 foo
- indented
+ bar
 
 # empty line above
-bar
+baz
