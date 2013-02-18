@@ -2,7 +2,7 @@ import json
 import os
 import unittest
 
-import parser
+from reqhash import parser
 
 class RequirementsParserTest(unittest.TestCase):
 

@@ -2,7 +2,7 @@
 
 import hashlib
 
-from parser import parse_requirements
+from reqhash.parser import parse_requirements
 
 
 def hash_requirements(filename):
@@ -13,7 +13,7 @@ def hash_requirements(filename):
 
 def main(args):
     print hash_requirements(args.filename)
-    
+
 
 if __name__ == '__main__':
     import argparse
