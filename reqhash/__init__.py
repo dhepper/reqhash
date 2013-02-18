@@ -11,13 +11,13 @@ def hash_requirements(filename):
     return digest 
 
 
-def main(args):
-    print hash_requirements(args.filename)
-
-
-if __name__ == '__main__':
+def main():
     import argparse
     argparser = argparse.ArgumentParser(description='Calculate a digest for a requirements file.')
     argparser.add_argument('filename', help='path to requirements file')
     args = argparser.parse_args()
-    main(args)
+    print hash_requirements(args.filename)
+
+
+if __name__ == '__main__':
+    main()
