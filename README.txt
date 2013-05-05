@@ -9,17 +9,31 @@ and whitespace.
 Author: Daniel Hepper <daniel@hepper.net>
 License: MIT, see LICENSE.txt
 
+Installation
+------------
+
+You can install reqhash from PyPI:
+
+    $ pip install reqhash
+
+Or directly from the repo:
+
+    $ git clone https://github.com/dhepper/reqhash
+    ...
+    $ python setup.py install
+
 Usage
 -----
-reqhash [-h] filename
 
-Calculate a digest for a requirements file.
+    reqhash [-h] filename
 
-Positional arguments:
-filename    path to requirements file
+    Calculate a digest for a requirements file.
 
-Optional arguments:
--h, --help  show this help message and exit
+    Positional arguments:
+    filename    path to requirements file
+
+    Optional arguments:
+    -h, --help  show this help message and exit
 
 Example
 -------
