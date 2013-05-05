@@ -30,5 +30,6 @@ def normalize_reqs(requirements):
         stripped = line.strip()
         if not stripped or stripped.startswith('#'):
             continue
-        normalized.append(stripped)
+        uncommented = stripped.split(' #')[0].strip()
+        normalized.append(uncommented)
     return normalized
