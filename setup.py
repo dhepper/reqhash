@@ -13,5 +13,6 @@ setup(name='reqhash',
         'console_scripts': [
             'reqhash = reqhash:main',
         ]
-    }
+    },
+    test_suite = 'tests'
 )

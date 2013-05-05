@@ -8,7 +8,7 @@ from reqhash.parser import parse_requirements
 def hash_requirements(filename):
     requirements = parse_requirements(filename)
     digest = hashlib.md5("\n".join(requirements)).hexdigest()
-    return digest 
+    return digest
 
 
 def main():
