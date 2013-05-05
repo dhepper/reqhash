@@ -6,7 +6,7 @@ with open('README.txt') as file:
     long_description = file.read()
 
 setup(name='reqhash',
-    version='0.1',
+    version='0.1.1',
     description='Calculate a hash value over a requirement file.',
     long_description=long_description,
     author='Daniel Hepper',
