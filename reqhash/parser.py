@@ -3,7 +3,7 @@ import os.path
 
 def parse_requirements(req_filename):
     basedir = os.path.dirname(os.path.abspath(req_filename))
-    with file(req_filename) as req_file:
+    with open(req_filename) as req_file:
         normalized = normalize_reqs(req_file)
     requirements = []
     for line in normalized:

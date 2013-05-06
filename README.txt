@@ -6,6 +6,10 @@ Calculate a hash value over a requirement file.
 reqhash parses referenced requirements and ignores changes in comments
 and whitespace.
 
+reqhash is tested under Python 2.6, 2.7 and 3.3. To install under 3.3, You
+have to use distribute, which is installed by default if you use a current
+version of virtualenv.
+
 Author: Daniel Hepper <daniel@hepper.net>
 License: MIT, see LICENSE.txt
 
