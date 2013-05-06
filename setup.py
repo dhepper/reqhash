@@ -13,7 +13,7 @@ if sys.version_info >= (3,):
 
 
 setup(name='reqhash',
-    version='0.1.1',
+    version='0.1.2',
     description='Calculate a hash value over a requirement file.',
     long_description=long_description,
     author='Daniel Hepper',
