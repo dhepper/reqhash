@@ -30,10 +30,11 @@ class RequirementsParserTest(unittest.TestCase):
     def test_normalize_inline(self):
         reqs_path = self.get_fixture('simple')
         reqs_w_inline_comments_path = self.get_fixture('simple_w_inline_comments')
-        with file(reqs_path) as reqs, file(reqs_w_inline_comments_path) as reqs_w_inline_comments:
-            normalized = parser.normalize_reqs(reqs)
-            normalized_w_inline_comments = parser.normalize_reqs(reqs_w_inline_comments)
-            self.assertEqual(normalized, normalized_w_inline_comments)
+        with file(reqs_path) as reqs:
+            with file(reqs_w_inline_comments_path) as reqs_w_inline_comments:
+                normalized = parser.normalize_reqs(reqs)
+                normalized_w_inline_comments = parser.normalize_reqs(reqs_w_inline_comments)
+                self.assertEqual(normalized, normalized_w_inline_comments)
 
     def get_fixture(self, name):
         return os.path.join(self.fixture_path, name + '.txt')
